@@ -1,0 +1,74 @@
+{
+  "description": "Run an action in the background",
+  "label": "Sub Action",
+  "category": "Misc",
+  "icon": {
+    "color": "Orange",
+    "name": "ActionsIcon"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Text",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "app_identifier",
+      "label": "Application identifier",
+      "info": "The identifier (subdomain) of the Betty application",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Text",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "app_id",
+      "label": "Application ID",
+      "info": "The UUID of the Betty application",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Boolean"
+      },
+      "name": "runInBackground",
+      "label": "Run In Background",
+      "info": "Should this action run async?"
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "jwt",
+      "label": "JWT",
+      "info": "The JWT in case of executing a private action",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Text",
+        "validations": {
+          "required": true
+        }
+      },
+      "name": "action_id",
+      "label": "Action ID",
+      "info": "The UUID of the action",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Map"
+      },
+      "name": "input",
+      "label": "Input",
+      "info": "The action input as JSON",
+      "advanced": false
+    }
+  ],
+  "yields": "NONE"
+}
